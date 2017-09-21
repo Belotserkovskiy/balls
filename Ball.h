@@ -8,8 +8,6 @@
 #include <abstractitem.h>
 #include <ItemList.h>
 
-//#define CIRCLE_RADIUS 25
-
 class Ball : public QObject, public QGraphicsEllipseItem, public AbstractItem
 {
     Q_OBJECT

@@ -26,6 +26,7 @@ enum TypeOfInteraction
 class AbstractMovementComputer
 {
 public:
+    virtual ~AbstractMovementComputer(){}
     virtual void setField( double width, double height) = 0;
     virtual void getField(double *width, double *height) = 0;
     virtual void setItemsList( ItemList *itemList) = 0;

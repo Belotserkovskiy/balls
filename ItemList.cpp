@@ -26,6 +26,7 @@ void ItemList::clear()
     for( auto &item : m_itemsList)
         delete item;
     m_itemsList.clear();
+    m_count = 0;
 }
 
 int ItemList::count()
