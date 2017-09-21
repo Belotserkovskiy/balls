@@ -11,6 +11,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = balls
 TEMPLATE = app
 
+CONFIG += c++14
+
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -26,12 +28,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         widget.cpp \
     MovementComputer.cpp \
-    BallsList.cpp
+    GraphicsScene.cpp \
+    Ball.cpp \
+    ItemList.cpp
 
 HEADERS  += widget.h \
-    abstractitemlist.h \
     abstractmovementcomputer.h \
     MovementComputer.h \
-    BallsList.h
+    GraphicsScene.h \
+    Ball.h \
+    abstractitem.h \
+    ItemList.h
 
 FORMS    += widget.ui
